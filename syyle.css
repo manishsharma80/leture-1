@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header {
+    background-color: black;
+}
+ul {
+    
+    padding: 15px 20px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+nav>ul{
+    display: flex;
+}
+#nav>ul>li{
+    padding: 15px 20px;
+}
+#nav>ul>li:hover{
+    background-color: rgb(111, 209, 255);
+    color: red;
+}
+#nav>ul>li>a:hover{
+    color: black;
+
+}
+#nav>ul>li>a{
+    color: white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+   text-shadow: 10cap;
+  }
+  #background{
+    width: 90vw;
+    height: 90vh;
+    animation-name: carousel;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes carousel {
+    0%{
+      background-image: url(hey.png);
+      background-size: cover;
+    }
+    100%{
+      background-image: url(vishnu.jpg);
+      background-size: cover;
+    }
+  }
